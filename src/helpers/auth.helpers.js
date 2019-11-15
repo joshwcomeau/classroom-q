@@ -36,7 +36,9 @@ export const login = () => {
 
   console.log('logging in', auth.authorize);
 
-  auth.authorize();
+  auth.authorize({
+    connection: 'github',
+  });
 };
 
 const setSession = (cb = () => {}) => (err, authResult) => {
@@ -53,7 +55,7 @@ const setSession = (cb = () => {}) => (err, authResult) => {
     tokens.expiresAt = expiresAt;
     user = authResult.idTokenPayload;
     localStorage.setItem('isLoggedIn', true);
-    navigate('/account');
+    navigate('/app');
     cb();
   }
 };

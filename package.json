@@ -7,7 +7,7 @@
   "dependencies": {
     "auth0-js": "^9.11.3",
     "auth0-lock": "^11.18.1",
-    "gatsby": "^2.17.11",
+    "gatsby": "^4.25.7",
     "gatsby-image": "^2.2.31",
     "gatsby-plugin-manifest": "^2.2.27",
     "gatsby-plugin-offline": "^3.0.19",
